@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+♟️ React Chess Game
+===================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my interactive Chess Game built with **React**, **chess.js**, and **react-chessboard**!
 
-## Available Scripts
+🔗 **Live Demo:** [Play Now](https://aditya-shukla-professional.github.io/Chess/)
 
-In the project directory, you can run:
+* * *
 
-### `npm start`
+🧠 Features
+-----------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*   ✅ Built using **React** with functional components and hooks
+*   ♟️ Chess logic powered by **chess.js**
+*   🎯 Move indicators:
+    *   🔴 Red circle = capturing move
+    *   🟢 Green circle = valid move
+    *   ⚪ White highlight = selected piece
+*   👑 Automatic promotion to Queen
+*   🏆 Game Over detection with winner announcement
+*   📱 Responsive design that adjusts to screen size
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* * *
 
-### `npm test`
+ <h2>🚀 How to Run Locally</h2>
+  <ol>
+    <li><strong>Clone the repository:</strong>
+      <pre><code>git clone https://github.com/Aditya-Shukla-Professional/Chess.git
+cd Chess</code></pre>
+    </li>
+    <li><strong>Install dependencies:</strong>
+      <pre><code>npm install</code></pre>
+    </li>
+    <li><strong>Start the app:</strong>
+      <pre><code>npm start</code></pre>
+    </li>
+    <li>Visit <code>http://localhost:3000</code> in your browser</li>
+  </ol>
+  
+* * *
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🛠 Tech Stack
+-------------
 
-### `npm run build`
+*   React
+*   chess.js
+*   react-chessboard
+*   CSS (Responsive + themed)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* * *
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📸 Screenshots
+--------------
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Chess Game Screenshot](chess.png)
 
-### `npm run eject`
+* * *
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+👨‍💻 Author
+------------
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Aditya Shukla**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+📍 GitHub: [@Aditya-Shukla-Professional](https://github.com/Aditya-Shukla-Professional)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* * *
 
-## Learn More
+🎮 Play Now
+-----------
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Click here to play the game](https://aditya-shukla-professional.github.io/Chess/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+⭐ If you liked this project, please consider starring the repository!
 
-### Code Splitting
+* * *
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Connect with me:
 
-### Analyzing the Bundle Size
+<p align="left">
+<a href="https://www.linkedin.com/in/aditya-shukla-8b3494341/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="aditya shukla" height="30" width="40" /></a>
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Made with ❤️ by Aditya Shukla**
