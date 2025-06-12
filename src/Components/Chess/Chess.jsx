@@ -8,6 +8,7 @@ const ChessGame = () => {
   const [fen,setFen]=useState("start");
   const [moveSquares, setMoveSquares] = useState({});
   const [winner,setWinner]=useState("");
+  const [selectedSquare, setSelectedSquare] = useState(null);
 
   function onDrop(sourceSquare,targetSquare){
     try{
@@ -39,10 +40,7 @@ const ChessGame = () => {
     setWinner("");
     setMoveSquares({});
   }
-  function onMouseOverSquare(square){
-    const piece=game.get(square);
-    if (!piece || piece.color!==game.turn()) return;
-
+  function highlightPossibleMoves(square){
     const moves=game.moves({square,verbose:true});
     if(!moves.length){
         setMoveSquares({});
@@ -61,9 +59,49 @@ const ChessGame = () => {
 
     setMoveSquares(newSquares)
   }
+  function onSquareClick(square){
+    if(!selectedSquare){
+      const piece=game.get(square);
+      if(piece && piece.color===game.turn()){
+        setSelectedSquare(square);
+        highlightPossibleMoves(square);
+      }
+    }
+    else{
+      try{
+        const move=game.move({
+          from:selectedSquare,
+          to:square,
+          promotion:"q"
+        })
 
+        if(move===null){
+          setSelectedSquare(null);
+          setMoveSquares({});
+        }
+        setFen(game.fen())
+        setSelectedSquare(null)
+        setMoveSquares({})
+
+        if(game.isGameOver()){
+          const lastTurn=game.turn()==="w"?"Black":"White";
+          setWinner(`${lastTurn} wins! 🥳`)
+        }
+      }catch(error){
+        console.error("Invalid Move!",error)
+        setSelectedSquare(null);
+        setMoveSquares({})
+      }
+    }
+  }
   function onMouseOutSquare(){
     setMoveSquares({});
+  }
+  function onMouseOverSquare(square){
+    const piece=game.get(square);
+    if (!piece || piece.color!==game.turn()) return;
+
+    highlightPossibleMoves(square)
   }
   
   return (
@@ -71,7 +109,7 @@ const ChessGame = () => {
         <h1 className="text">{winner ? winner : "Let's Play a Round of Chess 🧐"}</h1>
         <div className="outerContainer">
             <div className="chessContainer">
-              <Chessboard position={fen} boardWidth={Math.min(window.innerWidth - 60, 500)} onMouseOutSquare={onMouseOutSquare} onMouseOverSquare={onMouseOverSquare} customSquareStyles={moveSquares} onPieceDrop={onDrop}/>
+              <Chessboard position={fen} boardWidth={Math.min(window.innerWidth - 60, 500)} onMouseOutSquare={onMouseOutSquare} onMouseOverSquare={onMouseOverSquare} customSquareStyles={moveSquares} onPieceDrop={onDrop} onSquareClick={onSquareClick}/>
             </div>
         </div>
         <button className="restartButton" onClick={resetGame}>Restart Game</button>
