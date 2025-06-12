@@ -1,37 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-</head>
-<body style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px;">
+♟️ React Chess Game
+===================
 
-  <h1>♟️ React Chess Game</h1>
+Welcome to my interactive Chess Game built with **React**, **chess.js**, and **react-chessboard**!
 
-  <p>Welcome to my interactive Chess Game built with <strong>React</strong>, <strong>chess.js</strong>, and <strong>react-chessboard</strong>!</p>
+🔗 **Live Demo:** [Play Now](https://aditya-shukla-professional.github.io/Chess/)
 
-  <p>🔗 <strong>Live Demo:</strong> <a href="https://aditya-shukla-professional.github.io/Chess/" target="_blank">Play Now</a></p>
+* * *
 
-  <hr>
+🧠 Features
+-----------
 
-  <h2>🧠 Features</h2>
-  <ul>
-    <li>✅ Built using <strong>React</strong> with functional components and hooks</li>
-    <li>♟️ Chess logic powered by <strong>chess.js</strong></li>
-    <li>🎯 Move indicators:
-      <ul>
-        <li>🔴 Red circle = capturing move</li>
-        <li>🟢 Green circle = valid move</li>
-        <li>⚪ White highlight = selected piece</li>
-      </ul>
-    </li>
-    <li>👑 Automatic promotion to Queen</li>
-    <li>🏆 Game Over detection with winner announcement</li>
-    <li>📱 Responsive design that adjusts to screen size</li>
-  </ul>
+*   ✅ Built using **React** with functional components and hooks
+*   ♟️ Chess logic powered by **chess.js**
+*   🎯 Move indicators:
+    *   🔴 Red circle = capturing move
+    *   🟢 Green circle = valid move
+    *   ⚪ White highlight = selected piece
+*   👑 Automatic promotion to Queen
+*   🏆 Game Over detection with winner announcement
+*   📱 Responsive design that adjusts to screen size
 
-  <hr>
+* * *
 
-  <h2>🚀 How to Run Locally</h2>
+ <h2>🚀 How to Run Locally</h2>
   <ol>
     <li><strong>Clone the repository:</strong>
       <pre><code>git clone https://github.com/Aditya-Shukla-Professional/Chess.git
@@ -45,34 +36,46 @@ cd Chess</code></pre>
     </li>
     <li>Visit <code>http://localhost:3000</code> in your browser</li>
   </ol>
+  
+* * *
 
-  <hr>
+🛠 Tech Stack
+-------------
 
-  <h2>🛠 Tech Stack</h2>
-  <ul>
-    <li>React</li>
-    <li>chess.js</li>
-    <li>react-chessboard</li>
-    <li>CSS (Responsive + themed)</li>
-  </ul>
+*   React
+*   chess.js
+*   react-chessboard
+*   CSS (Responsive + themed)
 
-  <hr>
+* * *
 
-  <h2>📸 Screenshots</h2>
-  <p><img src="chess.png" alt="Chess Game Screenshot" width="100%"></p>
+📸 Screenshots
+--------------
 
-  <hr>
+![Chess Game Screenshot](chess.png)
 
-  <h2>👨‍💻 Author</h2>
-  <p><strong>Aditya Shukla</strong></p>
-  <p>📍 GitHub: <a href="https://github.com/Aditya-Shukla-Professional" target="_blank">@Aditya-Shukla-Professional</a></p>
+* * *
 
-  <hr>
+👨‍💻 Author
+------------
 
-  <h2>🎮 Play Now</h2>
-  <p><a href="https://aditya-shukla-professional.github.io/Chess/" target="_blank">Click here to play the game</a></p>
+**Aditya Shukla**
 
-  <p>⭐ If you liked this project, please consider starring the repository!</p>
+📍 GitHub: [@Aditya-Shukla-Professional](https://github.com/Aditya-Shukla-Professional)
 
-</body>
-</html>
+* * *
+
+🎮 Play Now
+-----------
+
+[Click here to play the game](https://aditya-shukla-professional.github.io/Chess/)
+
+⭐ If you liked this project, please consider starring the repository!
+
+### Connect with me:
+
+<p align="left">
+<a href="https://www.linkedin.com/in/aditya-shukla-8b3494341/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="aditya shukla" height="30" width="40" /></a>
+</p>
+
+**Made with ❤️ by Aditya Shukla**
