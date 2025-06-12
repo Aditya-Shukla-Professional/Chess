@@ -72,6 +72,8 @@ cd Chess</code></pre>
 
 ⭐ If you liked this project, please consider starring the repository!
 
+* * *
+
 ### Connect with me:
 
 <p align="left">
